@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="notes.css" />
+    <title>Write-Notes</write-notes></title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="#home">We always need little reminders-<i class="fa-regular fa-bell"></i></a></li>
+
+        </ul>
+    </nav>
+    <!-- TITLE -->
+    <header>
+      <h1>WORKS TO BE DONE</h1>
+    </header>
+    <!-- INPUT FIELD TO ENTER TASK AND DROPDOWN FILTER -->
+    <form>
+      <input type="text" placeholder="Enter The Work" class="todo_input" />
+      <button class="todo_button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter_todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
+    <div class="todo_container">
+      <ul class="todo_list"></ul>
+    </div>
+    <!-- ADDING JAVA SCRIPT -->
+    <script src="notes.js"></script>
+  </body>
+</html>
